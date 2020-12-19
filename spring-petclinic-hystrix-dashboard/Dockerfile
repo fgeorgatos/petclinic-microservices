@@ -1,6 +1,6 @@
 FROM openjdk:11-jre
 ARG DOKERSIZE:VERSION=V0.6.1
-ARG EXPOSED_PORT=9090
+ARG EXPOSED_PORT=7979
 ENV SPRING_PROFILES_ACTIVE docker
 ADD https://github.com/jwilder/dockerize/releases/download/${DOCKERIZE_VERSION}/dockerize-alpine-linux-amd64-${DOCKERIZE_VERSION}.tar.gz dockerize.tar.gz
 RUN tar -xzf dockerize.tar.gz
